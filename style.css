@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    color: #000;
+    font-weight: 260;
+    font-family: system-ui;
+
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.big_object {
+    display: inline-flex;
+}
+
+.big_img {
+    width: 735px;
+    height: 859px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #000842;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-left: 127px;
+    margin-top: 20px;
+}
+.img {
+    width: 559px;
+    height: 415px;
+    flex-shrink: 0;
+    margin-top: 130px;
+    margin-left: 88px;
+
+}
+
+.sign_in {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 600;
+    display: inline-flex;
+    margin-right: 333px;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    margin-left: 88px;
+}
+
+
+.lorem {
+    color: #9c9393;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 88px;
+    margin-top: 6px;
+}
+
+.sign_form {
+    width: 431px;
+    height: 635.2px;
+    padding: none;
+    margin-top: 192px;
+    margin-left: 126px;
+
+}
+
+.register_button {
+    border: none;
+    background-color: #fff;
+    color: #0C21C1;
+    font-weight: bold;
+    font-size: 14.5px;
+    cursor: pointer
+}
+.text {
+    font-size: 13px;
+    margin-top: 41px;
+    margin-bottom: 5px;
+    color: #6b6b6b;
+}
+input {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #3d3b3b;
+    outline: none;
+
+}
+
+.button_login {
+    width: 429px;
+    height: 53px;
+    font-size: 15px;
+    border-radius: 3rem;
+    background: #0C21C1;
+    color: #fff;
+    margin-top: 50px;
+    cursor: pointer;
+    
+
+}
+.or {
+    margin: 30px 160px;
+    color: #B5B5B5;
+    font-size: 15px;
+}
+.button_contac {
+    display: flex;
+    justify-content:space-around;
+    height: 20px;
+    width: 190px;
+    margin-left: 120px;
+}
+
+.facebook {
+    width: 42px;
+    height: 42px;
+    background-image:url(./facebook.png);
+    background-size: cover; /* Задайте размер изображения */
+    cursor: pointer; 
+    border: none;
+    background-color: #fff;
+}
+
+.apple {
+    width: 42px;
+    height: 42px;
+    background-image:url(./apple.png);
+    background-size: cover; /* Задайте размер изображения */
+    cursor: pointer; 
+    border: none;
+    background-color: #fff;
+}
+
+.google {
+    width: 42px;
+    height: 42px;
+    background-image:url(./google.png);
+    background-size: cover; /* Задайте размер изображения */
+    cursor: pointer; 
+    border: none;
+    background-color: #fff;
+}
+
