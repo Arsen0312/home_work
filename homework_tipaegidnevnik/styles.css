@@ -8,95 +8,92 @@ body {
     height: 100px;
     margin-left: 115px;
     margin-top: 100px;
-
-    
 }
 .header_element {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
 }
+.input {
+    width: 180px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+}
+.dobavit {
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 30px;
+    width: 70px;
+    font-size: 20px;
+    background-color: rgb(101, 101, 174);
+    color: white;
+}
 
 .note {
     width: 1400px;
-    height: 320px;
+    height: 475px;
     display: flex;
     align-items: start;
     justify-content: center;
-
 }
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
-.status_list_items {
-    width: 120px;
-    height: 40px;
-    background-color: rgb(255, 255, 255);
+.note > ul > li {
+    background-color: white;
     border: 0.5px solid rgb(0, 0, 0);
     padding-left: 10px;
     padding-top: 10px;
+}
+.note > ul > li:hover {
+    background-color: rgb(180, 180, 180) ;
+}
+.status_list_items {
+    width: 120px;
+    height: 40px;
 }
 .notes_list_items {
     width: 400px;
     height: 40px;
-    background-color: rgb(255, 255, 255);
-    border: 0.5px solid #000000;
-    padding-left: 10px;
-    padding-top: 10px;
 }
 .data_list_items {
     width: 200px;
     height: 40px;
-    background-color: rgb(255, 255, 255);
-    border: 0.5px solid rgb(0, 0, 0);
-    padding-left: 10px;
-    padding-top: 10px;
 }
 .tegs_list_items {
     width: 200px;
     height: 40px;
-    background-color: rgb(255, 255, 255);
-    border: 0.5px solid rgb(0, 0, 0);
-    padding-left: 10px;
-    padding-top: 10px;
 }
 .prioritet_list_items {
     width: 200px;
     height: 40px;
-    background-color: rgb(255, 255, 255);
-    border: 0.5px solid rgb(0, 0, 0);
-    padding-left: 10px;
-    padding-top: 10px;
 }
 .c {
     display: flex;
     justify-content: center;
 }
-.prioritet_list_items:hover {
-    width: 190px;
-    height: 35px;
-    background-color: rgb(156, 156, 156);
+.tegs_list_items_green {
+    background-color: aquamarine;
 }
-.status_list_items:hover {
-    width: 115px;
-    height: 35px;
-    background-color: rgb(156, 156, 156);
+.note > ul > li > span {
+    padding: 6px;
+    border-radius: 8px;
 }
-.data_list_items:hover {
-    width: 195px;
-    height: 35px;
-    background-color: rgb(156, 156, 156);
+.green {
+    background-color: rgb(168, 225, 206);
 }
-.tegs_list_items:hover {
-    width: 190px;
-    height: 35px;
-    background-color: rgb(156, 156, 156);
+.orange {
+    background-color: rgb(255, 212, 132);
 }
-.notes_list_items:hover {
-    width: 395px;
-    height: 35px;
-    background-color: rgb(156, 156, 156);
+.purpule {
+    background-color: rgb(172, 104, 172);
+}
+.grey {
+    background-color: rgb(169, 169, 169);
 }
