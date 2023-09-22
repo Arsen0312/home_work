@@ -1,0 +1,25 @@
+@media screen and (max-width: 1400px) {
+    .kvadrat {
+        background-color: red;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .kryg {
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 883px) {
+    .prymougolnik {
+        background-color: green;
+    }
+}
+@media screen and (max-width: 540px) {
+    .oval {
+        background-color: purple;
+    }
+}
+@media screen and (max-width: 320px) {
+    .triugolnik {
+        border-bottom: 100px solid rgb(43, 0, 162);
+    }
+}
