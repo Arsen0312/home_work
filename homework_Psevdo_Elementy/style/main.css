@@ -1,0 +1,25 @@
+.kvadrat {
+    width: 100px;
+    height: 100px;
+}
+.kryg {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.prymougolnik {
+    width: 200px;
+    height: 100px;
+}
+.oval {
+    width: 75px;
+    height: 100px;
+    border-radius: 50%;
+}
+.triugolnik {
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px;
+}
