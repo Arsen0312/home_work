@@ -1,0 +1,17 @@
+header {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+}
+.backg {
+    height: 1152px;
+    width: 100%;
+    background-image: url("/back.png");
+
+}
+.grib {
+    width: 200px;
+    height: 200px;
+    top: 35px;
+
+}
