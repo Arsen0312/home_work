@@ -54,7 +54,7 @@ console.log(findFirstEvenNumber(array))
 //map: Создайте функцию, которая принимает массив строк и возвращает новый массив, где каждая строка преобразована в верхний регистр.
 
 const text = ['MY NAME IS GEROIN']
-const getArrayLower = text.map(elem => elem.toLocaleLowerCase())
+const getArrayLower = text.map(elem => elem.toUpperCase())
 console.log(getArrayLower)
 
 //* task 9 
@@ -86,12 +86,28 @@ function reduceArray(array) {
 }
 reduceArray(array)
 
-//* task 11 
+//* task 12
 //some: Создайте функцию, которая проверяет, есть ли в массиве строк хотя бы одна строка длиной больше 10 символов. Функция должна возвращать true или false.
 
 function getWordBolshe10Bukv (obj) {
-    let res = obj.some(elem => elem.length >= 10)
+    return obj.some(elem => elem.length >= 10)
+}
+const obj1 = ['Anna', 'Olov', 'Gerodolfork']
+console.log(getWordBolshe10Bukv(obj1))
 
+//* task 13 
+// find: Создайте функцию, которая находит первое число в массиве чисел, которое делится на 7 без остатка, и возвращает это число. Если в массиве нет таких чисел, функция должна вернуть null.
+
+function getNumDelitsyNa7BezOstatka(num) {
+    num.find((elem, idx) => {
+        if (elem % 7 === 0) {
+            return console.log(elem);
+        } else if (num.length === idx + 1) {
+            return console.log(null);
+        }
+    })
 }
 
-console.log(getWordBolshe10Bukv(obj))
+const numArr = [1,2,3,4,5,6,7]
+
+getNumDelitsyNa7BezOstatka(numArr)
