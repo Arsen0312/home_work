@@ -100,8 +100,7 @@ Array.prototype.myReduce = function (callBack, initial = 0) {
     if(this.length === 0) throw new Error("Массив не может быт пустым бечара")
     let result = initial
     for (let i = 0; i < this.length; i++) {
-        callBack(result, this[i], i, this)
-        result += this[i]
+        result = callBack(result, this[i], i, this)
     }
     return result
 }
