@@ -138,39 +138,27 @@ firstArray= firstArrayOne.flat(1)
 console.log(firstArray.join(','))
 
 console.log('Hard_Task_1')
-
-const obj = {
-    a:'adipisicing',
-    b:'blanditiis',
-    c:'consectetur',
-    d:'dolor',
-    e:'enim',
-    f:'facere',
-    g:'golem',
-    h:'hic',
-    i:'ipsum',
-    j:'javaScript',
-    k:'kuala',
-    l:'Lorem',
-    m:'molestias',
-    n:'nisi',
-    o:'omnis',
-    p:'provident',
-}
-let obj2 = obj
-let array = []
-function findUniqueWords(str) {
-    for (let key in obj2) {
-        for (let i of str) {
-            if (i == key) {
-                array.push(obj2[key])
-            }
+// Создайте функцию findUniqueWords, которая принимает строку и возвращает массив уникальных слов (без повторений) в этой строке, игнорируя регистр букв. В данном случае, вы можете использовать объект для отслеживания уникальных слов
+function findUniqueWords(inputString) {
+    const words = inputString.toLowerCase().split(/\s+/);
+    const finalResult = []
+    const seen = new Set()
+    for (const word of words) {
+        if (seen.has(word)) {
+            continue
         }
+        finalResult.push(word)
+        seen.add(word)
     }
-    return array
+    return finalResult
 }
 
-console.log(findUniqueWords('hello'));
+const inputString = "This is a test. This is only a test."
+const result0 = findUniqueWords(inputString)
+console.log(result0)
+
+const seen9 = new Set()
+console.log(typeof seen9);
 
 console.log('Hard_Task_2')
 
@@ -232,16 +220,11 @@ console.log('Hard_Task_6')
 
 const numBers = [1,2,3,4,5,6,2,4,6]
 
-function filterUniqueNumbers(numbers) {
-    const uniqueNumbers = []
-  
-    for (let i = 0; i < numbers.length; i++) {
-      if (uniqueNumbers.indexOf(numbers[i]) === -1) {
-        uniqueNumbers.push(numbers[i]);
-      }
-    }
-  
-    return uniqueNumbers;
+const filterUniqueNumbers = function(num) {
+    const res = num.filter((elem, indx) => {
+    return num.indexOf(elem) === indx
+    
+})
+console.log(res);
 }
-
-console.log(filterUniqueNumbers(numBers));
+filterUniqueNumbers(numBers)
