@@ -1,0 +1,22 @@
+.active {
+    color: blue;
+}
+
+.selected {
+    color: brown;
+}
+
+.some {
+    background-color: blueviolet;
+    border-radius: 4px;
+}
+
+.third {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
