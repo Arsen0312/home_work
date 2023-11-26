@@ -43,6 +43,7 @@ em.forEach(elem => {
 })
 
 // Найдите все HTML-теги mark, которые находятся в div с классом .row и задайте им класс .selected
+const rowDiv = document.querySelector('.row');
 
 const rowDiv = document.querySelector('.row');
 

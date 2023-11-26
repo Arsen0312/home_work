@@ -1,0 +1,81 @@
+.wrapper_for_game {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    border: 2px solid rgb(116, 116, 116);
+    border-radius: 8px;
+
+}
+
+#krestiki_noliki {
+    position: absolute;
+    transform: translate(150%, 50%);
+    width: 305px;
+    height: 305px;
+    display: grid;
+    background-color: #ccc;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px;
+}
+
+.kletki {
+    color: #cacaca;
+    font-family: 'Pixelify Sans', sans-serif;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    cursor: pointer;
+    background-color: #292929;
+}
+
+.winKr {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 400px;
+    background-color: rgb(52, 52, 52);
+    color: black;
+    font-family: 'Pixelify Sans', sans-serif;
+    border-radius: 8px;
+    border: 2px solid rgb(149, 149, 149);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.X {
+    z-index: 4;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px 9px;
+    border: 2px solid rgb(149, 149, 149);
+    right: 10px;
+    top: 10px;
+    border-radius: 8px;
+}
+
+.poz {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    border: 2px solid rgb(149, 149, 149);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.poz1 {
+    display: none;
+}
