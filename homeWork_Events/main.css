@@ -1,0 +1,233 @@
+body {
+    background-color: rgb(41, 41, 41);
+}
+
+.output-text {
+    background-color: rgba(65, 65, 65, 0.404);
+    width: 99%;
+    height: 50px;
+    border-radius: 16px;
+    padding: 8px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+.input-text {
+    width: 99%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: rgb(69, 69, 69);
+    font-size: 36px;
+    background-color: antiquewhite;
+    border-radius: 16px;
+    border: rgb(162, 146, 125) solid 2px;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.wrapper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 590px;
+    position: relative;
+}
+
+.carGame {
+    padding-top: 20px;
+    width: 100%;
+    height: 150px;
+    background: black
+}
+
+.carTwo {
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.carTwo_no_win {
+    animation: carDvigenie_2 6s;
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+.carTwo_win {
+    animation: carDvigenie_2 5s;
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.carOne {
+    margin-left: 0px;
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.carOne_no_Win {
+    animation: carDvigenie_2 6s;
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.carOne_win {
+    animation: carDvigenie 5s;
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.pervoe_koliso {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 0px;
+    bottom: 0px;
+}
+.vtoroe_koliso {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: 0px;
+    right: 0px;
+}
+
+.krysha {
+    position: absolute;
+    background-color: blue;
+    width: 40px;
+    height: 20px;
+    left: 20px;
+    border-radius: 8px;
+}
+
+.kuzov {
+    position: absolute;
+    background-color: blue;
+    width: 80px;
+    height: 25px;
+    bottom: 0;
+    border-radius: 8px;
+}
+.okno {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 20px;
+    height: 10px;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+
+.krysha1 {
+    position: absolute;
+    background-color: red;
+    width: 40px;
+    height: 20px;
+    left: 20px;
+    border-radius: 8px;
+}
+
+.kuzov1 {
+    position: absolute;
+    background-color: red;
+    width: 80px;
+    height: 25px;
+    bottom: 0;
+    border-radius: 8px;
+}
+
+@keyframes carDvigenie {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 93.5%;
+    }
+}
+
+@keyframes carDvigenie_2 {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 93.5%;
+    }
+}
+
+.modal-window {
+    z-index: 2;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 400px;
+    background-color: aliceblue;
+    color: black;
+    font-family: 'Pixelify Sans', sans-serif;
+    border-radius: 8px;
+    display: none;
+}
+.activeModal {
+    display: block;
+}
+
+.text {
+    position: absolute;
+    background-color: rgb(155, 161, 166);
+    padding: 10px;
+    border-radius: 8px;
+    transform: translate(60%, 400%);
+
+}
+
+#X {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: black;
+    color: aliceblue;
+    right: 10px;
+    top: 10px;
+    border: none;
+}
+
+.wrapper3 {
+    position: absolute;
+    left: 44%;
+    bottom: 20%;
+}
+
+
+
+  
+#pForKor {
+    position: absolute;
+    bottom: -20px;
+    padding: 10px;
+    border: solid 2px rgb(99, 97, 97);
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.win_blue_Dis_none {
+    display: none;
+}
+.win_red_Dis_none {
+    display: none;
+}
