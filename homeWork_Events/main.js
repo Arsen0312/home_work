@@ -101,7 +101,7 @@ const carOne = document.getElementById("carOne")
 const carTwo = document.getElementById("carTwo")
 const start = document.getElementById("start")
 const modalWin = document.getElementById("modal-window")
-const btnX = document.getElementById("X")
+const btnX = document.getElementById("x")
 const red = document.getElementById('red')
 const blue = document.getElementById('blue')
 
